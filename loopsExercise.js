@@ -4,6 +4,10 @@
 for (i = 1; i <= 7; i++){
     console.log(i);
 }
+// Or
+// for (i = 1; i < 8; i++){
+//     console.log(i);
+// }
 
 console.log("========");
 
@@ -32,10 +36,17 @@ console.log("========");
 let harryPotterMovies = 0;
 
 // 4b
-while (harryPotterMovies <= 8){
-    console.log(harryPotterMovies);
+while (harryPotterMovies <= 7){
     harryPotterMovies++;
+    console.log(harryPotterMovies);
 }
+// Or
+// while (true){
+//     harryPotterMovies++;
+//     if (harryPotterMovies === 8){
+//         break;
+//     }
+// }
 
 console.log("========");
 
@@ -66,4 +77,18 @@ const quote = [
 ];
 
 // 6b
-let fullQuote 
+let fullQuote = "";
+for (word of quote){
+    fullQuote += `${word} `
+}
+console.log(fullQuote);
+// Or
+// let fullQuote = "";
+// for (i = 0; i < quote.length; i++){
+//     fullQuote += quote[i];
+//     if (i < quote.length - 1){
+//         fullQuote += " ";
+//     }
+// }
+
+// console.log(fullQuote);
